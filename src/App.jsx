@@ -3,20 +3,34 @@ import "./App.css";
 import Card from "./componentes/Card";
 import confetti from "canvas-confetti";
 import { WinnerModal } from "./componentes/WinnerModal";
+import imageTitle from './images/6543d0e84fd8dd7b77f40a5e907f7581.png';
+import image001 from './images/001.png';
+import image004 from './images/004.png';
+import image007 from './images/007.png';
+import image025 from './images/025.png';
+import image052 from './images/052.png';
+import image054 from './images/054.png';
+import image050 from './images/050.png';
+import image132 from './images/132.png';
+import image066 from './images/066.png';
+import image143 from './images/143.png';
+import image095 from './images/095.png';
+import image063 from './images/063.png';
+
 
 const IMAGES = [
-  "src/images/pokemons/001.png",
-  "src/images/pokemons/004.png",
-  "src/images/pokemons/007.png",
-  "src/images/pokemons/025.png",
-  "src/images/pokemons/052.png",
-  "src/images/pokemons/054.png",
-  "src/images/pokemons/132.png",
-  "src/images/pokemons/050.png",
-  "src/images/pokemons/066.png",
-  "src/images/pokemons/143.png",
-  "src/images/pokemons/095.png",
-  "src/images/pokemons/063.png",
+  image001,
+  image004,
+  image007,
+  image025,
+  image052,
+  image054,
+  image050,
+  image132,
+  image066,
+  image143,
+  image095,
+  image063,
 ]
   .flatMap((image) => [`a|${image}`, `b|${image}`])
   .sort(() => Math.random() - 0.5);
@@ -51,7 +65,7 @@ function App() {
       <div>
         <img
           className="title"
-          src="./src/images/6543d0e84fd8dd7b77f40a5e907f7581.png"
+          src={imageTitle}
         />
       </div>
       <div className="card-container">
